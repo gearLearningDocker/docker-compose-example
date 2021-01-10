@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: 'visits_frontend'
+    restart: unless-stopped
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      PORT: 3000
+      REDIS_PORT: 6379
+      REDIS_HOST: backend
+    depends_on:
+      - backend
+    command: npm run start:dev
+
+  backend:
+    container_name: 'visits_backend'
+    restart: unless-stopped
+    image: 'redis:alpine'

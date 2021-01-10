@@ -1,0 +1,6 @@
+{
+  "verbose": false,
+  "ext": "*.js",
+  "watch": "src",
+  "exec": "node src/index.js"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "docker-compose-example",
+  "version": "1.0.0",
+  "description": "Learn how-to docker-compose",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon"
+  },
+  "keywords": ["express", "redis", "docker", "docker-compose"],
+  "author": "Verda Muso",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "redis": "^3.0.2"
+  }
+}
